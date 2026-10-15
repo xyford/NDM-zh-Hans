@@ -1,0 +1,12 @@
+build/
+dist/
+__pycache__/
+*.bak
+*.hash
+*.log
+*.spec
+portable/ndm-zh-patch.exe
+deploy*.ps1
+simulate_update.ps1
+run_deploy_elevated.ps1
+ndm_zh_autopatch.ps1

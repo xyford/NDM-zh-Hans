@@ -1,0 +1,1397 @@
+[
+ {
+  "en": "MallFormed Chunk Size Received From Server. HexCharsCount= ",
+  "zh": "服务器返回的块大小格式错误。HexCharsCount= ",
+  "src": "ref"
+ },
+ {
+  "en": "MallFormed Chunk Size Received From Server.",
+  "zh": "服务器返回的块大小格式错误。",
+  "src": "ref"
+ },
+ {
+  "en": "Internal Error. Socket ( ",
+  "zh": "内部错误。Socket ( ",
+  "src": "ref"
+ },
+ {
+  "en": "File is Empty. (FileSize=0)",
+  "zh": "文件为空。(FileSize=0)",
+  "src": "ref"
+ },
+ {
+  "en": " (Via Proxy)",
+  "zh": "（通过代理）",
+  "src": "ref"
+ },
+ {
+  "en": "Internal Error - Segmentation failed.",
+  "zh": "内部错误 - 分段失败。",
+  "src": "ref"
+ },
+ {
+  "en": "DownloadEngine Internal Error : Sorry, Something went wrong. ",
+  "zh": "下载引擎内部错误：抱歉，出现问题。",
+  "src": "ref"
+ },
+ {
+  "en": "No Network connection or DNS failed.Proxy-Server is not reachable.",
+  "zh": "无网络连接或 DNS 失败。代理服务器不可达。",
+  "src": "ref"
+ },
+ {
+  "en": "Can not Connect to Proxy Server.",
+  "zh": "无法连接到代理服务器。",
+  "src": "ref"
+ },
+ {
+  "en": "No Internet connection or DNS failed.",
+  "zh": "无互联网连接或 DNS 失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Can't Connect to Host.",
+  "zh": "无法连接到主机。",
+  "src": "ref"
+ },
+ {
+  "en": "Server",
+  "zh": "服务器",
+  "src": "ref"
+ },
+ {
+  "en": "Proxy ",
+  "zh": "代理 ",
+  "src": "ref"
+ },
+ {
+  "en": " Auth Failed For this Connection.",
+  "zh": " 此连接的身份验证失败。",
+  "src": "ref"
+ },
+ {
+  "en": " Auth , ",
+  "zh": " 身份验证 ，",
+  "src": "ref"
+ },
+ {
+  "en": "Although other Connections have passed ",
+  "zh": "尽管其他连接已通过",
+  "src": "ref"
+ },
+ {
+  "en": " Authenticate Failed for first Connection.@",
+  "zh": " 首个连接的身份验证失败。@",
+  "src": "ref"
+ },
+ {
+  "en": "Download Must be Renewed. Server Reply is :",
+  "zh": "必须重新续期下载。服务器回复：",
+  "src": "ref"
+ },
+ {
+  "en": "No Network Connection or DNS Error. Proxy-Server is not Reachable.",
+  "zh": "无网络连接或 DNS 错误。代理服务器不可达。",
+  "src": "ref"
+ },
+ {
+  "en": "No Network Connection or DNS Error.",
+  "zh": "无网络连接或 DNS 错误。",
+  "src": "ref"
+ },
+ {
+  "en": "Connection TimeOut.",
+  "zh": "连接超时。",
+  "src": "ref"
+ },
+ {
+  "en": "Error in Downloading HLS file.",
+  "zh": "下载 HLS 文件出错。",
+  "src": "ref"
+ },
+ {
+  "en": "No Network Connection or DNS Error.Proxy-Server is not Reachable.",
+  "zh": "无网络连接或 DNS 错误。代理服务器不可达。",
+  "src": "ref"
+ },
+ {
+  "en": "No Internet Connection or DNS Failed.",
+  "zh": "无互联网连接或 DNS 失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Connection Timed Out.",
+  "zh": "连接超时。",
+  "src": "ref"
+ },
+ {
+  "en": "Error In Merging Segments, Insufficient Free Space or Problem with Download Directory Permissions",
+  "zh": "合并分段时出错：可用空间不足或下载目录权限有问题",
+  "src": "ref"
+ },
+ {
+  "en": "DownloadEngine Unknown Error.",
+  "zh": "下载引擎未知错误。",
+  "src": "ref"
+ },
+ {
+  "en": "SSL HandShake Error.",
+  "zh": "SSL 握手错误。",
+  "src": "ref"
+ },
+ {
+  "en": "Failed To Write Data On Disk. Seems Disk is full.",
+  "zh": "写入磁盘失败。磁盘可能已满。",
+  "src": "ref"
+ },
+ {
+  "en": "Failed To Open Segment-File.",
+  "zh": "无法打开分段文件。",
+  "src": "ref"
+ },
+ {
+  "en": "Socks Handshake failed, Network Error or Connection Closed, Check SOCKS Setting.",
+  "zh": "SOCKS 握手失败：网络错误或连接已关闭，请检查 SOCKS 设置。",
+  "src": "ref"
+ },
+ {
+  "en": "Problem on SOCKS-Proxy, Check User, Password and Socks Setting.",
+  "zh": "SOCKS 代理出现问题，请检查用户名、密码和 Socks 设置。",
+  "src": "ref"
+ },
+ {
+  "en": "Error in SOCKS-Proxy, Socket is not connected, Check Socks Setting. ",
+  "zh": "SOCKS 代理错误：套接字未连接，请检查 Socks 设置。",
+  "src": "ref"
+ },
+ {
+  "en": "Error in SOCKS-Proxy(Send) Socket is not connected, Check Socks Setting. ",
+  "zh": "SOCKS 代理（发送）错误：套接字未连接，请检查 Socks 设置。",
+  "src": "ref"
+ },
+ {
+  "en": "Error on Socket.",
+  "zh": "套接字错误。",
+  "src": "ref"
+ },
+ {
+  "en": "Send Failed. FTP Control-Connection is Closed.",
+  "zh": "发送失败。FTP 控制连接已关闭。",
+  "src": "ref"
+ },
+ {
+  "en": "Bad Ftp Reply From Server.",
+  "zh": "FTP 服务器响应错误。",
+  "src": "ref"
+ },
+ {
+  "en": "File Size Changed. Redownload file.",
+  "zh": "文件大小已改变。请重新下载文件。",
+  "src": "ref"
+ },
+ {
+  "en": "Malformed file size received from server.",
+  "zh": "从服务器收到的文件大小格式错误。",
+  "src": "ref"
+ },
+ {
+  "en": "Problem On Creating Data Connection.",
+  "zh": "创建数据连接时出现问题。",
+  "src": "ref"
+ },
+ {
+  "en": "FTP Server Sent Bad Reply. Start Position of Segment is Incorrect.",
+  "zh": "FTP 服务器响应错误。分段起始位置不正确。",
+  "src": "ref"
+ },
+ {
+  "en": "Server Closed Data Channel Suddenly.",
+  "zh": "服务器突然关闭了数据通道。",
+  "src": "ref"
+ },
+ {
+  "en": "Resumabilty not supported (REST Command). Redownload File.",
+  "zh": "服务器不支持断点续传（REST 命令）。请重新下载文件。",
+  "src": "ref"
+ },
+ {
+  "en": "Exception : FTP Control Connection Read Error.",
+  "zh": "异常：FTP 控制连接读取错误。",
+  "src": "ref"
+ },
+ {
+  "en": "Server Sent Bad Replies.Buffer Exploit Detected !",
+  "zh": "服务器发送了错误响应。检测到缓冲区攻击！",
+  "src": "ref"
+ },
+ {
+  "en": "Network Error on Data-CONNECTION, Data Connection Closed. ",
+  "zh": "数据连接发生网络错误，数据连接已关闭。",
+  "src": "ref"
+ },
+ {
+  "en": "Problem on Receiving HlsMaster file",
+  "zh": "接收 HLS 主文件时出现问题",
+  "src": "ref"
+ },
+ {
+  "en": "Too many HLS Segments.",
+  "zh": "HLS 分段过多。",
+  "src": "ref"
+ },
+ {
+  "en": "Encrypted Media.",
+  "zh": "加密媒体。",
+  "src": "ref"
+ },
+ {
+  "en": "Buffer Exploit Detected.",
+  "zh": "检测到缓冲区攻击。",
+  "src": "ref"
+ },
+ {
+  "en": "Server Didn't allow File to Be Resumed. Please Redownload File.",
+  "zh": "服务器不允许续传该文件。请重新下载。",
+  "src": "ref"
+ },
+ {
+  "en": " Http-Redirect ).",
+  "zh": " 次 HTTP 重定向）。",
+  "src": "ref"
+ },
+ {
+  "en": "Too Many Redirection( More than ",
+  "zh": "重定向过多（超过 ",
+  "src": "ref"
+ },
+ {
+  "en": "Server Redirected to an unsupported  protocol/Invalid URL.",
+  "zh": "服务器重定向到不受支持的协议或无效 URL。",
+  "src": "ref"
+ },
+ {
+  "en": "Unsupported WWW-Authentication Scheme.",
+  "zh": "不支持的 WWW 身份验证方案。",
+  "src": "ref"
+ },
+ {
+  "en": "Server Authentication Reply without Auth-Scheme. ",
+  "zh": "服务器身份验证响应缺少验证方案。",
+  "src": "ref"
+ },
+ {
+  "en": "Unsupported Proxy-Authentication Scheme.",
+  "zh": "不支持的代理身份验证方案。",
+  "src": "ref"
+ },
+ {
+  "en": "Proxy Authentication Reply without Auth-Scheme. ",
+  "zh": "代理身份验证响应缺少验证方案。",
+  "src": "ref"
+ },
+ {
+  "en": "SSL Initialization Error.",
+  "zh": "SSL 初始化错误。",
+  "src": "ref"
+ },
+ {
+  "en": "SSL Initialization Failed.",
+  "zh": "SSL 初始化失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Error Sending CONNECT. Connection was Closed. ",
+  "zh": "发送 CONNECT 出错。连接已关闭。",
+  "src": "ref"
+ },
+ {
+  "en": "Error Sending CONNECT Request to Proxy.",
+  "zh": "向代理发送 CONNECT 请求出错。",
+  "src": "ref"
+ },
+ {
+  "en": "Error Sending Request, Connection was Closed.",
+  "zh": "发送请求出错，连接已关闭。",
+  "src": "ref"
+ },
+ {
+  "en": "Error Sending Request.",
+  "zh": "发送请求出错。",
+  "src": "ref"
+ },
+ {
+  "en": "Server Sent a MallFormed Status Line.",
+  "zh": "服务器发送了格式错误的状态行。",
+  "src": "ref"
+ },
+ {
+  "en": "Server Sent Incorrect Reply, Resumability is not Supported, Redownload the File",
+  "zh": "服务器响应不正确，不支持断点续传，请重新下载该文件",
+  "src": "ref"
+ },
+ {
+  "en": "Problem on Establishing SSL Tunnel. ",
+  "zh": "建立 SSL 隧道时出现问题。",
+  "src": "ref"
+ },
+ {
+  "en": "Malformed FileSize Received from server.",
+  "zh": "从服务器收到的文件大小格式错误。",
+  "src": "ref"
+ },
+ {
+  "en": "TS File has not the same Size as Previous try. You Should Redownload File.",
+  "zh": "TS 文件大小与上次尝试不一致。请重新下载文件。",
+  "src": "ref"
+ },
+ {
+  "en": "Bad Server Reply. File Size is Incorrect. Redownload File.",
+  "zh": "服务器响应错误。文件大小不正确。请重新下载文件。",
+  "src": "ref"
+ },
+ {
+  "en": "TS File Size is not the same as Previous try.You should redownload it from the site you have got it.",
+  "zh": "TS 文件大小与上次尝试不一致。请从原网站重新下载。",
+  "src": "ref"
+ },
+ {
+  "en": "File Size is not the same as Previous try. You should Redownload File from the site you have got it.",
+  "zh": "文件大小与上次尝试不一致。请从原网站重新下载。",
+  "src": "ref"
+ },
+ {
+  "en": "Unsupported Content-Encoding : ",
+  "zh": "不支持的内容编码：",
+  "src": "ref"
+ },
+ {
+  "en": "407 Unauthorized.",
+  "zh": "407 未授权。",
+  "src": "ref"
+ },
+ {
+  "en": "Unsupported Proxy-Authentication Scheme. ( ",
+  "zh": "不支持的代理身份验证方案。（",
+  "src": "ref"
+ },
+ {
+  "en": "401 Unauthorized.",
+  "zh": "401 未授权。",
+  "src": "ref"
+ },
+ {
+  "en": "Unsupported WWW-Authentication Scheme. ( ",
+  "zh": "不支持的 WWW 身份验证方案。（",
+  "src": "ref"
+ },
+ {
+  "en": "Redirection When Download is in progress by other Connections. ",
+  "zh": "其他连接正在下载时发生重定向。",
+  "src": "ref"
+ },
+ {
+  "en": "File Has been Changed on Server.Yo must Redownload it from beggining.(Reply-Code=416)",
+  "zh": "服务器上的文件已更改，必须从头重新下载。（响应码=416）",
+  "src": "ref"
+ },
+ {
+  "en": "File is Empty.(FileSize=0). Reply-Code to Range-Request is 416",
+  "zh": "文件为空 (FileSize=0)。Range 请求的响应码为 416",
+  "src": "ref"
+ },
+ {
+  "en": "Internal Error in Dynamic-Segmentation(Range Error) Server Replied with 416 (Unsatisfiable Range)",
+  "zh": "动态分段内部错误（Range 错误），服务器返回 416（无法满足的范围）",
+  "src": "ref"
+ },
+ {
+  "en": "Server Closed Connection Suddenly.",
+  "zh": "服务器突然关闭了连接。",
+  "src": "ref"
+ },
+ {
+  "en": "Buffer Exploit Detected!, No End-Of-Line Found in received Headers.",
+  "zh": "检测到缓冲区攻击！接收的头部中未找到行结束符。",
+  "src": "ref"
+ },
+ {
+  "en": "can not Resolve Address (Socks-4) .DNS Failed or Network is not Connected. ",
+  "zh": "无法解析地址 (Socks-4)。DNS 失败或网络未连接。",
+  "src": "ref"
+ },
+ {
+  "en": "Domain Name is too long for SOCKS Protocol.",
+  "zh": "域名长度超出 SOCKS 协议限制。",
+  "src": "ref"
+ },
+ {
+  "en": "Domain Name is too long for Socks Protocol.",
+  "zh": "域名长度超出 Socks 协议限制。",
+  "src": "ref"
+ },
+ {
+  "en": "Failed to Establish Connection to Socks-Server.",
+  "zh": "无法建立与 Socks 服务器的连接。",
+  "src": "ref"
+ },
+ {
+  "en": "Auth Problem - Socks-V5 Server did not Accep Current Auth-Mode.",
+  "zh": "身份验证问题 - Socks V5 服务器不接受当前验证方式。",
+  "src": "ref"
+ },
+ {
+  "en": "HandShake Failed in Socks-V5 Greeting",
+  "zh": "Socks V5 问候握手失败",
+  "src": "ref"
+ },
+ {
+  "en": "Socks Auth Failed.",
+  "zh": "Socks 身份验证失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Error on parsing Video File",
+  "zh": "解析视频文件出错",
+  "src": "ref"
+ },
+ {
+  "en": "Error on parsing Audio File",
+  "zh": "解析音频文件出错",
+  "src": "ref"
+ },
+ {
+  "en": "Error on Muxing MKV File",
+  "zh": "混流 MKV 文件出错",
+  "src": "ref"
+ },
+ {
+  "en": "Error on Reading from WebSocket",
+  "zh": "读取 WebSocket 出错",
+  "src": "ref"
+ },
+ {
+  "en": "Client Sent a Bad Request, Buffer Exploit Detected !",
+  "zh": "客户端发送了错误请求，检测到缓冲区攻击！",
+  "src": "ref"
+ },
+ {
+  "en": "HandShake Failed.",
+  "zh": "握手失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Invalid Message Received From Client.",
+  "zh": "收到来自客户端的无效消息。",
+  "src": "ref"
+ },
+ {
+  "en": "Client is Closing the Connection.",
+  "zh": "客户端正在关闭连接。",
+  "src": "ref"
+ },
+ {
+  "en": "Invalid Opcode Received.",
+  "zh": "收到无效的操作码。",
+  "src": "ref"
+ },
+ {
+  "en": "Too-Long Frame Sent by Client.",
+  "zh": "客户端发送了过长的帧。",
+  "src": "ref"
+ },
+ {
+  "en": "Ping/Pong with Too long Data_Bytes.",
+  "zh": "Ping/Pong 数据字节过长。",
+  "src": "ref"
+ },
+ {
+  "en": "Client Sent Too-Long Message.",
+  "zh": "客户端发送了过长的消息。",
+  "src": "ref"
+ },
+ {
+  "en": "Error on Sending Pong.",
+  "zh": "发送 Pong 出错。",
+  "src": "ref"
+ },
+ {
+  "en": "About NeatDownloadManager",
+  "zh": "关于 NeatDownloadManager",
+  "src": "ref"
+ },
+ {
+  "en": "Unable to Check For Update , Please Try Again Later",
+  "zh": "无法检查更新，请稍后重试",
+  "src": "ref"
+ },
+ {
+  "en": "NOT Up To Date, Click Above Button to get the New Version",
+  "zh": "当前不是最新版本，点击上方按钮获取新版本",
+  "src": "ref"
+ },
+ {
+  "en": "Application is Up To Date.",
+  "zh": "已是最新版本。",
+  "src": "ref"
+ },
+ {
+  "en": "Check For Update",
+  "zh": "检查更新",
+  "src": "ref"
+ },
+ {
+  "en": "( Basic Version - Free License )",
+  "zh": "（基础版 - 免费许可）",
+  "src": "ref"
+ },
+ {
+  "en": "Contact : support@neatdownloadmanager.com",
+  "zh": "联系方式：support@neatdownloadmanager.com",
+  "src": "ref"
+ },
+ {
+  "en": "Website : neatdownloadmanager.com",
+  "zh": "官方网站：neatdownloadmanager.com",
+  "src": "ref"
+ },
+ {
+  "en": "Checking For Update...",
+  "zh": "正在检查更新...",
+  "src": "ref"
+ },
+ {
+  "en": "Download New Version",
+  "zh": "下载新版本",
+  "src": "ref"
+ },
+ {
+  "en": "OK",
+  "zh": "确定",
+  "src": "ref"
+ },
+ {
+  "en": "Warning",
+  "zh": "警告",
+  "src": "ref"
+ },
+ {
+  "en": "Authentication",
+  "zh": "身份验证",
+  "src": "ref"
+ },
+ {
+  "en": "User Name",
+  "zh": "用户名",
+  "src": "ref"
+ },
+ {
+  "en": " Authentication For :",
+  "zh": " 需要身份验证：",
+  "src": "ref"
+ },
+ {
+  "en": "Remember",
+  "zh": "记住",
+  "src": "ref"
+ },
+ {
+  "en": "Password",
+  "zh": "密码",
+  "src": "ref"
+ },
+ {
+  "en": "Cancel",
+  "zh": "取消",
+  "src": "ref"
+ },
+ {
+  "en": "Browsers",
+  "zh": "浏览器",
+  "src": "ref"
+ },
+ {
+  "en": "* Catches Video/Audio links on many websites.",
+  "zh": "* 可抓取众多网站的视频/音频链接。",
+  "src": "ref"
+ },
+ {
+  "en": "* Sends download links from Chrome to the application.",
+  "zh": "* 将下载链接从 Chrome 发送到本程序。",
+  "src": "ref"
+ },
+ {
+  "en": "* YouTube is not supported ( Chrome store doesn't allow )",
+  "zh": "* 不支持 YouTube（Chrome 商店不允许）",
+  "src": "ref"
+ },
+ {
+  "en": "* Compatible with Chromium-based browsers like Opera, Brave, ...",
+  "zh": "* 兼容 Opera、Brave 等基于 Chromium 的浏览器",
+  "src": "ref"
+ },
+ {
+  "en": "Show Download Panel on Web Media Players",
+  "zh": "在网页媒体播放器上显示下载面板",
+  "src": "ref"
+ },
+ {
+  "en": "Add Chrome Extension",
+  "zh": "添加 Chrome 扩展",
+  "src": "ref"
+ },
+ {
+  "en": "* Sends download links from Firefox to the application.",
+  "zh": "* 将下载链接从 Firefox 发送到本程序。",
+  "src": "ref"
+ },
+ {
+  "en": "Add Firefox Extension",
+  "zh": "添加 Firefox 扩展",
+  "src": "ref"
+ },
+ {
+  "en": "* YouTube is supported partially.",
+  "zh": "* 部分支持 YouTube。",
+  "src": "ref"
+ },
+ {
+  "en": "Close",
+  "zh": "关闭",
+  "src": "ref"
+ },
+ {
+  "en": "Add Edge Extension",
+  "zh": "添加 Edge 扩展",
+  "src": "ref"
+ },
+ {
+  "en": "Chrome is not Installed.",
+  "zh": "未安装 Chrome。",
+  "src": "ref"
+ },
+ {
+  "en": "MS Edge is not Installed.",
+  "zh": "未安装 MS Edge。",
+  "src": "ref"
+ },
+ {
+  "en": "Firefox is not Installed.",
+  "zh": "未安装 Firefox。",
+  "src": "ref"
+ },
+ {
+  "en": "Tree View",
+  "zh": "目录树",
+  "src": "ref"
+ },
+ {
+  "en": "All Downloads",
+  "zh": "所有下载",
+  "src": "ref"
+ },
+ {
+  "en": "Compressed",
+  "zh": "压缩包",
+  "src": "ref"
+ },
+ {
+  "en": "Audio",
+  "zh": "音频",
+  "src": "ref"
+ },
+ {
+  "en": "Application",
+  "zh": "应用程序",
+  "src": "ref"
+ },
+ {
+  "en": "Document",
+  "zh": "文档",
+  "src": "ref"
+ },
+ {
+  "en": "Complete",
+  "zh": "已完成",
+  "src": "ref"
+ },
+ {
+  "en": "Misc",
+  "zh": "杂项",
+  "src": "ref"
+ },
+ {
+  "en": "Incomplete",
+  "zh": "未完成",
+  "src": "ref"
+ },
+ {
+  "en": "Video",
+  "zh": "视频",
+  "src": "ref"
+ },
+ {
+  "en": "Open Folder",
+  "zh": "打开文件夹",
+  "src": "ref"
+ },
+ {
+  "en": "Download Completed",
+  "zh": "下载完成",
+  "src": "ref"
+ },
+ {
+  "en": "No",
+  "zh": "否",
+  "src": "ref"
+ },
+ {
+  "en": "Status",
+  "zh": "状态",
+  "src": "ref"
+ },
+ {
+  "en": "Protocol",
+  "zh": "协议",
+  "src": "ref"
+ },
+ {
+  "en": "User",
+  "zh": "用户",
+  "src": "ref"
+ },
+ {
+  "en": "Target",
+  "zh": "目标",
+  "src": "ref"
+ },
+ {
+  "en": "File Name",
+  "zh": "文件名",
+  "src": "ref"
+ },
+ {
+  "en": "Bandwidth",
+  "zh": "带宽",
+  "src": "ref"
+ },
+ {
+  "en": "Size",
+  "zh": "大小",
+  "src": "ref"
+ },
+ {
+  "en": "Last Try (z-a)",
+  "zh": "上次尝试 (z-a)",
+  "src": "ref"
+ },
+ {
+  "en": "Remaining Time",
+  "zh": "剩余时间",
+  "src": "ref"
+ },
+ {
+  "en": " Download ",
+  "zh": " 下载 ",
+  "src": "ref"
+ },
+ {
+  "en": " Connections ",
+  "zh": " 连接 ",
+  "src": "ref"
+ },
+ {
+  "en": " Options ",
+  "zh": " 选项 ",
+  "src": "ref"
+ },
+ {
+  "en": "File Size",
+  "zh": "文件大小",
+  "src": "ref"
+ },
+ {
+  "en": "Starting...",
+  "zh": "正在开始...",
+  "src": "ref"
+ },
+ {
+  "en": "Downloaded",
+  "zh": "已下载",
+  "src": "ref"
+ },
+ {
+  "en": "Unknown",
+  "zh": "未知",
+  "src": "ref"
+ },
+ {
+  "en": "Resumable",
+  "zh": "可续传",
+  "src": "ref"
+ },
+ {
+  "en": "Limit Bandwidth to ",
+  "zh": "限制带宽为 ",
+  "src": "ref"
+ },
+ {
+  "en": "0 or Blank = No Limit",
+  "zh": "0 或留空 = 不限制",
+  "src": "ref"
+ },
+ {
+  "en": "Apply",
+  "zh": "应用",
+  "src": "ref"
+ },
+ {
+  "en": "KB/sec",
+  "zh": "KB/秒",
+  "src": "ref"
+ },
+ {
+  "en": "Show Completion Dialog",
+  "zh": "显示完成对话框",
+  "src": "ref"
+ },
+ {
+  "en": "Remember on Resume",
+  "zh": "续传时记住",
+  "src": "ref"
+ },
+ {
+  "en": "Segments : 0  Completed : 0",
+  "zh": "分段 : 0  已完成 : 0",
+  "src": "ref"
+ },
+ {
+  "en": "Connections",
+  "zh": "连接数",
+  "src": "ref"
+ },
+ {
+  "en": "Pause",
+  "zh": "暂停",
+  "src": "ref"
+ },
+ {
+  "en": "Segments : 0",
+  "zh": "分段 : 0",
+  "src": "ref"
+ },
+ {
+  "en": "Segments : ",
+  "zh": "分段 : ",
+  "src": "ref"
+ },
+ {
+  "en": "Download...",
+  "zh": "下载中...",
+  "src": "ref"
+ },
+ {
+  "en": "Paused - ",
+  "zh": "已暂停 - ",
+  "src": "ref"
+ },
+ {
+  "en": "Failed to Create DownloadEngine - ",
+  "zh": "创建下载引擎失败 - ",
+  "src": "ref"
+ },
+ {
+  "en": "Paused -  ",
+  "zh": "已暂停 -  ",
+  "src": "ref"
+ },
+ {
+  "en": "Failed to Start DownloadEngine.",
+  "zh": "启动下载引擎失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Yes",
+  "zh": "是",
+  "src": "ref"
+ },
+ {
+  "en": "Proxy",
+  "zh": "代理",
+  "src": "ref"
+ },
+ {
+  "en": " Authentication Failed for ",
+  "zh": " 身份验证失败：",
+  "src": "ref"
+ },
+ {
+  "en": "Video Status",
+  "zh": "视频状态",
+  "src": "ref"
+ },
+ {
+  "en": "Total Downloaded",
+  "zh": "总已下载",
+  "src": "ref"
+ },
+ {
+  "en": "Total File Size",
+  "zh": "文件总大小",
+  "src": "ref"
+ },
+ {
+  "en": "Audio Status",
+  "zh": "音频状态",
+  "src": "ref"
+ },
+ {
+  "en": "Total Bandwidth",
+  "zh": "总带宽",
+  "src": "ref"
+ },
+ {
+  "en": "Size : ",
+  "zh": "大小：",
+  "src": "ref"
+ },
+ {
+  "en": "Video : ",
+  "zh": "视频：",
+  "src": "ref"
+ },
+ {
+  "en": "Error on Creating Temp Directory.",
+  "zh": "创建临时目录出错。",
+  "src": "ref"
+ },
+ {
+  "en": "Audio : ",
+  "zh": "音频：",
+  "src": "ref"
+ },
+ {
+  "en": "Failed to Start DownloadEngines.",
+  "zh": "启动下载引擎失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Failed to Create DownloadEngines.",
+  "zh": "创建下载引擎失败。",
+  "src": "ref"
+ },
+ {
+  "en": "Muxing MKV...",
+  "zh": "正在混流 MKV...",
+  "src": "ref"
+ },
+ {
+  "en": "Error : ",
+  "zh": "错误：",
+  "src": "ref"
+ },
+ {
+  "en": "Download Error",
+  "zh": "下载错误",
+  "src": "ref"
+ },
+ {
+  "en": "Log File",
+  "zh": "日志文件",
+  "src": "ref"
+ },
+ {
+  "en": "URL :",
+  "zh": "URL：",
+  "src": "ref"
+ },
+ {
+  "en": "'Paused ( ",
+  "zh": "'已暂停 ( ",
+  "src": "ref"
+ },
+ {
+  "en": "'Error on Creating Temp Directory.'",
+  "zh": "'创建临时目录出错。'",
+  "src": "ref"
+ },
+ {
+  "en": "'Error ( )'",
+  "zh": "'错误 ( )'",
+  "src": "ref"
+ },
+ {
+  "en": "Error on Creating Temp Directory  ( ",
+  "zh": "创建临时目录出错（",
+  "src": "ref"
+ },
+ {
+  "en": "Resume",
+  "zh": "继续",
+  "src": "ref"
+ },
+ {
+  "en": "New URL",
+  "zh": "新建 URL",
+  "src": "ref"
+ },
+ {
+  "en": "Delete",
+  "zh": "删除",
+  "src": "ref"
+ },
+ {
+  "en": "Stop",
+  "zh": "停止",
+  "src": "ref"
+ },
+ {
+  "en": "About",
+  "zh": "关于",
+  "src": "ref"
+ },
+ {
+  "en": "Settings",
+  "zh": "设置",
+  "src": "ref"
+ },
+ {
+  "en": "Quit",
+  "zh": "退出",
+  "src": "ref"
+ },
+ {
+  "en": "The Port is Needed for Communicating with the Browsers.",
+  "zh": "该端口用于与浏览器通信。",
+  "src": "heur"
+ },
+ {
+  "en": "Redownload",
+  "zh": "重新下载",
+  "src": "ref"
+ },
+ {
+  "en": "Properties",
+  "zh": "属性",
+  "src": "ref"
+ },
+ {
+  "en": "Show Window",
+  "zh": "显示窗口",
+  "src": "ref"
+ },
+ {
+  "en": "Invalid FTP Address. No file name specified in the address.",
+  "zh": "无效的 FTP 地址。地址中未指定文件名。",
+  "src": "ref"
+ },
+ {
+  "en": "Invalid URL or Unsupported Protocol.",
+  "zh": "无效的 URL 或不支持的协议。",
+  "src": "ref"
+ },
+ {
+  "en": "Quit NeatDownloadManager",
+  "zh": "退出 NeatDownloadManager",
+  "src": "ref"
+ },
+ {
+  "en": "You can hide NeatDownloadManager in Notification Area by clicking on MainWindow close button and then bring it to front by clicking on Notification item Menu.",
+  "zh": "点击主窗口的关闭按钮可将 NeatDownloadManager 隐藏到通知区域，之后可通过通知区域图标菜单将其重新显示。",
+  "src": "ref"
+ },
+ {
+  "en": "Are you sure you want to Quit Totally ?",
+  "zh": "确定要完全退出吗？",
+  "src": "ref"
+ },
+ {
+  "en": "Quit Application Totally",
+  "zh": "完全退出应用程序",
+  "src": "ref"
+ },
+ {
+  "en": "Hide in Notification Area",
+  "zh": "隐藏到通知区域",
+  "src": "ref"
+ },
+ {
+  "en": " General ",
+  "zh": " 常规      ",
+  "src": "ref"
+ },
+ {
+  "en": "Neat Download Manager Settings",
+  "zh": "Neat Download Manager 设置",
+  "src": "ref"
+ },
+ {
+  "en": " Passwords ",
+  "zh": " 密码管理      ",
+  "src": "ref"
+ },
+ {
+  "en": " Proxy/Socks ",
+  "zh": " 代理/Socks    ",
+  "src": "ref"
+ },
+ {
+  "en": "8 Connections Recommended",
+  "zh": "推荐 8 个连接",
+  "src": "ref"
+ },
+ {
+  "en": "Max Connections per Download",
+  "zh": "每个下载的最大连接数",
+  "src": "ref"
+ },
+ {
+  "en": "Create Additional Connections All at Once",
+  "zh": "同时创建所有附加连接",
+  "src": "ref"
+ },
+ {
+  "en": "When first Connection Starts Downloading  , :",
+  "zh": "当首个连接开始下载后  , :",
+  "src": "ref"
+ },
+ {
+  "en": "Bandwidth Limit per Download (KB/s)",
+  "zh": "每个下载的带宽限制 (KB/s)",
+  "src": "ref"
+ },
+ {
+  "en": "Create Additional Connections One by One",
+  "zh": "逐个创建附加连接",
+  "src": "ref"
+ },
+ {
+  "en": "Default User-Agent ",
+  "zh": "默认 User-Agent ",
+  "src": "ref"
+ },
+ {
+  "en": "0 or blank for No limit ",
+  "zh": "0 或留空表示不限制 ",
+  "src": "ref"
+ },
+ {
+  "en": "Use this UA for both Manual and Browser-Sent Downloads ( Be Careful )",
+  "zh": "手动添加和浏览器发送的下载都使用此 UA（请谨慎）",
+  "src": "ref"
+ },
+ {
+  "en": "Reset",
+  "zh": "重置",
+  "src": "ref"
+ },
+ {
+  "en": "Create Category Folders ( e.g.  Video, Document, ...  )",
+  "zh": "创建分类文件夹（如 视频、文档 等）",
+  "src": "ref"
+ },
+ {
+  "en": "Download Directory ",
+  "zh": "下载目录 ",
+  "src": "ref"
+ },
+ {
+  "en": "Get File Creation Date From Server",
+  "zh": "从服务器获取文件创建日期",
+  "src": "ref"
+ },
+ {
+  "en": "Temporary Directory",
+  "zh": "临时目录",
+  "src": "ref"
+ },
+ {
+  "en": "Start Application on System Startup ( Recommended )",
+  "zh": "开机自动启动（推荐）",
+  "src": "ref"
+ },
+ {
+  "en": "Show Download Completion Dialog",
+  "zh": "显示下载完成对话框",
+  "src": "ref"
+ },
+ {
+  "en": "HTTP Proxy",
+  "zh": "HTTP 代理",
+  "src": "ref"
+ },
+ {
+  "en": "No Proxy/Socks",
+  "zh": "不使用代理/Socks",
+  "src": "ref"
+ },
+ {
+  "en": "Socks Proxy",
+  "zh": "Socks 代理",
+  "src": "ref"
+ },
+ {
+  "en": "Address",
+  "zh": "地址",
+  "src": "ref"
+ },
+ {
+  "en": "Port",
+  "zh": "端口",
+  "src": "ref"
+ },
+ {
+  "en": "ftp Protocol",
+  "zh": "FTP 协议",
+  "src": "ref"
+ },
+ {
+  "en": "https Protocol",
+  "zh": "HTTPS 协议",
+  "src": "ref"
+ },
+ {
+  "en": "Select Folder",
+  "zh": "选择文件夹",
+  "src": "ref"
+ },
+ {
+  "en": "Remove",
+  "zh": "移除",
+  "src": "ref"
+ },
+ {
+  "en": "Select a Folder for Downloaded Files :",
+  "zh": "选择下载文件的保存文件夹：",
+  "src": "ref"
+ },
+ {
+  "en": "Select a Folder for Temporary Segment Files :",
+  "zh": "选择临时分段文件的保存文件夹：",
+  "src": "ref"
+ },
+ {
+  "en": "Directory doesn't exist",
+  "zh": "目录不存在",
+  "src": "ref"
+ },
+ {
+  "en": "Select a Directory",
+  "zh": "选择目录",
+  "src": "ref"
+ },
+ {
+  "en": "Directory is READ-ONLY",
+  "zh": "目录为只读",
+  "src": "ref"
+ },
+ {
+  "en": "Please Correct Focused Item.",
+  "zh": "请更正当前选中项。",
+  "src": "ref"
+ },
+ {
+  "en": "Download",
+  "zh": "下载",
+  "src": "ref"
+ },
+ {
+  "en": "URL : ",
+  "zh": "URL：",
+  "src": "ref"
+ },
+ {
+  "en": "Renew Download Link",
+  "zh": "更新下载链接",
+  "src": "ref"
+ },
+ {
+  "en": "You should Resend the URL from Browser to NeatDownloadManager.",
+  "zh": "请从浏览器重新发送 URL 到 NeatDownloadManager。",
+  "src": "ref"
+ },
+ {
+  "en": "The URL has been changed or Download Session has expired.",
+  "zh": "URL 已更改或下载会话已过期。",
+  "src": "ref"
+ },
+ {
+  "en": "Resend",
+  "zh": "重新发送",
+  "src": "ref"
+ },
+ {
+  "en": "Title = ",
+  "zh": "标题 = ",
+  "src": "ref"
+ },
+ {
+  "en": " Waiting for new URL from Browser Extension ..... ",
+  "zh": " 正在等待浏览器扩展发送新的 URL …… ",
+  "src": "ref"
+ },
+ {
+  "en": "Download Properties",
+  "zh": "下载属性",
+  "src": "ref"
+ },
+ {
+  "en": "Page URL :",
+  "zh": "页面 URL：",
+  "src": "ref"
+ },
+ {
+  "en": "(Editable)",
+  "zh": "（可编辑）",
+  "src": "ref"
+ },
+ {
+  "en": "Page Title :",
+  "zh": "页面标题：",
+  "src": "ref"
+ },
+ {
+  "en": "Show Page",
+  "zh": "显示页面",
+  "src": "ref"
+ },
+ {
+  "en": "Browser :",
+  "zh": "浏览器：",
+  "src": "ref"
+ },
+ {
+  "en": "Last Try :",
+  "zh": "上次尝试：",
+  "src": "ref"
+ },
+ {
+  "en": "Added On :",
+  "zh": "添加时间：",
+  "src": "ref"
+ },
+ {
+  "en": "File Size :",
+  "zh": "文件大小：",
+  "src": "ref"
+ },
+ {
+  "en": "Status :",
+  "zh": "状态：",
+  "src": "ref"
+ },
+ {
+  "en": "Temp Path :",
+  "zh": "临时路径：",
+  "src": "ref"
+ },
+ {
+  "en": "Saved To :",
+  "zh": "保存位置：",
+  "src": "ref"
+ },
+ {
+  "en": "Database Error",
+  "zh": "数据库错误",
+  "src": "ref"
+ }
+]
