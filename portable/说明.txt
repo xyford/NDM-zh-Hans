@@ -5,13 +5,14 @@
   双击 ndm-zh-patch.exe（会请求管理员权限）:
     [一键汉化]  自动结束 NDM → 打补丁 → 自动拉起 NDM
     [恢复原版]  用备份(%ProgramData%\NDM-zh\NeatDM.original.bak)还原英文版
+    [x] 更新后自动保持汉化 —— 默认关闭。勾选后会在登录时和每小时
+        静默检查一次(无窗口), NDM 更新回英文版时自动重打汉化。
+        取消勾选即停用并删除计划任务。
     启动时自动检查 GitHub 更新，有新版会显示"下载更新"按钮
 
 【快捷批处理】
   汉化NDM.bat          双击直接静默汉化安装目录(也可把 NeatDM.exe 拖到上面)
-  安装自动保持.bat      注册计划任务：登录时+每小时检查，NDM 更新后自动重打汉化
-  卸载自动保持.bat      删除计划任务
-  恢复原版英文.bat      用 NeatDM.original.bak 还原英文版并停用自动保持
+  恢复原版英文.bat      用 NeatDM.original.bak 还原英文版
 
 【命令行模式】
   ndm-zh-patch.exe --silent [路径]   静默汉化

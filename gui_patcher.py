@@ -13,11 +13,15 @@ GUI 功能:
 import sys, os, subprocess, time, threading, json, ctypes
 import urllib.request
 
-__version__ = '1.0.0'
+__version__ = '1.1.0'
 GITHUB_REPO = 'xyford/NDM-zh-Hans'
 DEFAULT_TARGET = r'C:\Program Files (x86)\Neat Download Manager\NeatDM.exe'
 BACKUP_DIR = os.path.join(os.environ.get('ProgramData', r'C:\ProgramData'), 'NDM-zh')
 BACKUP_EXE = os.path.join(BACKUP_DIR, 'NeatDM.original.bak')
+TASK_NAME = 'NDM-zh-autopatch'
+# 自动保持启用时, 补丁器 exe 会被复制到这个固定位置, 计划任务指向它
+WATCHDOG_EXE = os.path.join(BACKUP_DIR, 'ndm-zh-patch.exe')
+WATCHDOG_VBS = os.path.join(BACKUP_DIR, 'run_hidden.vbs')
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import ndm_zh_patch
@@ -63,11 +67,56 @@ def start_ndm(path):
         pass
 
 
+def task_installed():
+    r = subprocess.run(['schtasks', '/Query', '/TN', TASK_NAME], capture_output=True, timeout=15)
+    return r.returncode == 0
+
+
+def enable_autokeep(log=print):
+    """启用"更新后自动保持": 复制补丁器到固定位置 + 注册静默计划任务(登录+每小时)"""
+    import shutil
+    os.makedirs(BACKUP_DIR, exist_ok=True)
+    src = os.path.abspath(sys.argv[0]) if getattr(sys, 'frozen', False) else None
+    if src and os.path.normcase(src) != os.path.normcase(WATCHDOG_EXE):
+        shutil.copy2(src, WATCHDOG_EXE)
+    if not os.path.exists(WATCHDOG_EXE):
+        log('[X] 补丁器 exe 未能部署到固定位置, 无法启用自动保持')
+        return False
+    with open(WATCHDOG_VBS, 'w', encoding='ascii') as f:
+        f.write('CreateObject("Wscript.Shell").Run """' + WATCHDOG_EXE + '"" --silent", 0, True\n')
+    ps = ('$a = New-ScheduledTaskAction -Execute "wscript.exe" -Argument \'"{0}"\';'
+          '$t1 = New-ScheduledTaskTrigger -AtLogOn;'
+          '$t2 = New-ScheduledTaskTrigger -Once -At (Get-Date).Date -RepetitionInterval (New-TimeSpan -Hours 1);'
+          '$p = New-ScheduledTaskPrincipal -UserId $env:USERNAME -LogonType Interactive -RunLevel Highest;'
+          '$s = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable -ExecutionTimeLimit (New-TimeSpan -Minutes 5);'
+          'Register-ScheduledTask -TaskName "{1}" -Action $a -Trigger @($t1,$t2) -Principal $p -Settings $s -Force | Out-Null'
+          ).format(WATCHDOG_VBS, TASK_NAME)
+    r = subprocess.run(['powershell', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-Command', ps],
+                       capture_output=True, timeout=60)
+    if r.returncode != 0:
+        log('[X] 计划任务注册失败')
+        return False
+    log('[√] 已启用自动保持: 登录时和每小时静默检查, NDM 更新后自动重打汉化')
+    return True
+
+
+def disable_autokeep(log=print):
+    r = subprocess.run(['schtasks', '/Delete', '/TN', TASK_NAME, '/F'], capture_output=True, timeout=30)
+    if r.returncode == 0:
+        log('[√] 已停用自动保持(计划任务已删除)')
+        return True
+    log('[=] 计划任务不存在, 无需停用')
+    return True
+
+
 def do_patch(target, log=print):
     """打补丁; 返回 (rc, was_running)"""
     if not os.path.exists(target):
         log(f'[X] 找不到文件: {target}')
         return 1, False
+    if ndm_zh_patch.is_patched(target):
+        log('[=] 已是汉化版, 无需操作')
+        return 2, False
     was_running = False
     if ndm_pids():
         log('[*] 检测到 NDM 正在运行, 先结束进程...')
@@ -231,6 +280,20 @@ def gui_main():
     btn_patch.pack(side='left', padx=(0, 10))
     btn_restore = ttk.Button(btn_row, text='恢复原版', command=lambda: run_action(do_restore, '恢复原版'))
     btn_restore.pack(side='left')
+
+    # 自动保持复选框: 默认关闭, 勾选才注册计划任务(静默无窗口), 取消勾选即删除任务
+    autokeep_var = tk.BooleanVar(value=task_installed())
+    def on_autokeep():
+        want = autokeep_var.get()
+        def worker():
+            log('—— 设置自动保持 ——')
+            ok = enable_autokeep(log) if want else disable_autokeep(log)
+            if not ok:
+                root.after(0, lambda: autokeep_var.set(not want))
+        threading.Thread(target=worker, daemon=True).start()
+    chk = ttk.Checkbutton(root, text='更新后自动保持汉化(登录时/每小时静默检查, 默认关闭)',
+                          variable=autokeep_var, command=on_autokeep)
+    chk.pack(anchor='w', padx=10)
 
     btn_update = None
     def on_update_click(url, tag):
