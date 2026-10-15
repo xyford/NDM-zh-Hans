@@ -42,7 +42,7 @@ if ($wasRunning) { Start-Sleep -Seconds 2 }
 $bak = Join-Path $dir 'NeatDM.original.bak'
 if (-not (Test-Path $bak)) { Copy-Item $exe $bak -Force; Log '已备份原版' }
 
-& $patcher $exe | Out-Null
+& $patcher --silent $exe | Out-Null
 $rc = $LASTEXITCODE
 if ($rc -eq 0 -or $rc -eq 2) {
     Set-Content -Path $hashFile -Value (Get-FileHash $exe -Algorithm SHA256).Hash -Encoding ASCII

@@ -29,7 +29,7 @@ taskkill /F /IM NeatDM.exe >nul 2>&1
 set "KILLED=!errorlevel!"
 if "!KILLED!"=="0" echo [*] 已结束运行中的 NDM
 
-"%~dp0ndm-zh-patch.exe" "%TARGET%"
+"%~dp0ndm-zh-patch.exe" --silent "%TARGET%"
 set RC=!errorlevel!
 
 if "!KILLED!"=="0" (

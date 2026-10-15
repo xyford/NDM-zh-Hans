@@ -1,29 +1,25 @@
 ﻿NDM (Neat Download Manager) 简体中文汉化补丁 · 便携版
 =====================================================
 
-【用法一 · 直接汉化】
-  双击 汉化NDM.bat —— 自动打补丁（会弹一次管理员提权确认）。
-  也可以把别处的 NeatDM.exe 拖到 汉化NDM.bat 上直接汉化那个文件。
+【推荐用法 · 图形界面】
+  双击 ndm-zh-patch.exe（会请求管理员权限）:
+    [一键汉化]  自动结束 NDM → 打补丁 → 自动拉起 NDM
+    [恢复原版]  用备份(%ProgramData%\NDM-zh\NeatDM.original.bak)还原英文版
+    启动时自动检查 GitHub 更新，有新版会显示"下载更新"按钮
 
-【用法二 · 更新后自动保持汉化】
-  双击 安装自动保持.bat —— 会把补丁器复制到 %LOCALAPPDATA%\NDM-zh
-  并注册计划任务（登录时 + 每小时检查），NDM 一旦更新回英文版就会自动重打。
-  卸载：双击 卸载自动保持.bat。
+【快捷批处理】
+  汉化NDM.bat          双击直接静默汉化安装目录(也可把 NeatDM.exe 拖到上面)
+  安装自动保持.bat      注册计划任务：登录时+每小时检查，NDM 更新后自动重打汉化
+  卸载自动保持.bat      删除计划任务
+  恢复原版英文.bat      用 NeatDM.original.bak 还原英文版并停用自动保持
 
-【恢复英文原版】
-  双击 恢复原版英文.bat（用 NeatDM.original.bak 还原，并停用自动保持）。
+【命令行模式】
+  ndm-zh-patch.exe --silent [路径]   静默汉化
+  ndm-zh-patch.exe --restore [路径]  静默恢复原版
 
-【文件说明】
-  ndm-zh-patch.exe      补丁器本体（免安装 Python，内置翻译表 279 条）
-  NeatDM.original.bak   英文原版备份
-  ndm_zh_watchdog.ps1   看门狗（由计划任务调用）
-  register_task.ps1     计划任务注册脚本
-
-【原理】
-  按字符串内容定位英文界面文本 → 译文写入 exe 新增的 .l10n 节 → 重定向所有
-  代码引用（只改带重定位项的位置，ASLR 安全）→ 同步修补长度前缀。
-  不依赖固定偏移，所以 NDM 更新后重跑本补丁依然有效。
+【项目主页】
+  https://github.com/xyford/NDM-zh-Hans
 
 【注意】
-  - 补丁时会自动结束并重启正在运行的 NDM。
   - 品牌名、浏览器名、URL 等刻意保留英文，避免破坏功能。
+  - 补丁按字符串内容定位，不依赖固定偏移，NDM 更新后重跑依然有效。
